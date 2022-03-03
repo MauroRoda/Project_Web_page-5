@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&family=Righteous&family=Roboto:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Work sans',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+img{
+    width: 30px;
+}
+
+/* --------- inicio Cabeçalho ------- */
+
+/* ------INICIO Menu Superior ---- */
+
+section{
+    position: relative;
+}
+.menu{
+    background-color: #003c72;
+}
+nav{
+    display: block;
+}
+nav.menu-superior{
+    width: 1004px;
+    margin: 0 auto;
+}
+ul.lista-menu{
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista-menu li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista-menu li a{
+    display: flex;
+    align-items: center;
+}
+.acessibilidade{
+    padding: 0 5px;
+}
+.campo-pesquisa{
+    width: 250px;
+    border: 1px solid rgb(255, 255, 255, 50%);
+    border-radius: 2px;
+    padding: 6px 30px 6px 10px;
+    background: none;
+    height: 35px;
+}
+.curso-gratis{
+    color: rgb(33, 100, 197);
+    font-weight: bold;
+}
+
+/* ------FIM Menu Superior ---- */
+/* ------INICIO Menu Inferior ---- */
+.menu-inferior{
+    border: 3px solid red;
+}
+
+/* ------FIM Menu Inferior ---- */
