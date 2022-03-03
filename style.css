@@ -1,72 +1,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&family=Righteous&family=Roboto:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap');
 *{
-    margin: 0;
-    border: 0;
-    text-decoration: none;
-    color: white;
-    list-style: none;
     box-sizing: border-box;
-    font-family: 'Work sans',sans-serif;
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    line-height: 22px;
     font-weight: 400;
+    color: #222222;
+    font-size: 14px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
 }
-img{
-    width: 30px;
+
+
+/* ---- Header */
+.header{
+    display: block;
 }
-
-/* --------- inicio Cabeçalho ------- */
-
-/* ------INICIO Menu Superior ---- */
-
+.header .act{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+/* ---__________________LINK MENUS_____________________________- */
 section{
+    display: block;
     position: relative;
 }
-.menu{
-    background-color: #003c72;
+section#menu-links-uteis{
+    background-color: #003b71;
 }
+
+/* _________________________________________ */
 nav{
     display: block;
 }
-nav.menu-superior{
+nav.wrapper-links-uteis{
     width: 1004px;
     margin: 0 auto;
 }
-ul.lista-menu{
-    height: 48px;
+/* _____________________________________ */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+ul.lista-links-uteis{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 48px;
 }
-.lista-menu li{
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+ul.lista-links-uteis li{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.lista-menu li a{
+
+a{
+    text-decoration: none;
+    vertical-align: baseline;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+ul.lista-links-uteis li a{
     display: flex;
     align-items: center;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+    padding: 0;
+
 }
-.acessibilidade{
+
+ul.lista-links-uteis li a.iconeAcessibilidade{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
     padding: 0 5px;
+    cursor: pointer;
 }
-.campo-pesquisa{
-    width: 250px;
-    border: 1px solid rgb(255, 255, 255, 50%);
-    border-radius: 2px;
-    padding: 6px 30px 6px 10px;
-    background: none;
-    height: 35px;
+/* ---- icone para escurecewr tela --- */
+img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    width: 18px;
+    margin-left: 10px;
 }
-.curso-gratis{
-    color: rgb(33, 100, 197);
+.iconeContraste img{
+    width: 15px;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+ul.lista-links-uteis li.destaque-cta a{
+    color: #2264c6;
     font-weight: bold;
+    padding: 0;
 }
 
-/* ------FIM Menu Superior ---- */
-/* ------INICIO Menu Inferior ---- */
-.menu-inferior{
-    border: 3px solid red;
+ul.listalinks-uteis li#mais-dropdown a{
+    padding: 0 8px 0 0;
+}
+ul.listalinks-uteis li.clickDropdown a img{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    cursor: pointer;
 }
 
-/* ------FIM Menu Inferior ---- */
+form{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+form#topoPesquisa{
+    position: relative;
+    width: 250px;
+    margin: 20px auto;
+    display: flex;
+}
+
+form#topoPesquisa input[name="s"]{
+    width: 250px;
+    font-family: 'Work Sans' Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid rgb(255, 255, 255 ,50%);
+    border-radius: 2px;
+    background: none;
+    padding:  6px 30px 6px 10px;
+}
+/* ----______________________________________________ */
+div{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+div#wrapper-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    width: 1004px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-top: 0;
+}

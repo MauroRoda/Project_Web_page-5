@@ -9,40 +9,55 @@
     <title>Pagina Clone UP</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <section class="menu">
-            <nav class="menu-superior">
-                <ul class="lista-menu">
-                    <li>
-                        <a href="#">Acessibilidade</a>
-                        <a href="#"><img class="acessibilidade" src="./icons/escurece-tela.png" alt="icone-escurece-menu"></a>
-                        <a href="#"><img class="acessibilidade" src="./icons/aumenta-fonte.png" alt="aumenta-fonte"></a>
-                        <a href="#"><img class="acessibilidade" src="./icons/diminui-fonte.png" alt="diminui-fonte"></a>
+    <div id="container">
+    <header class="header act">
+        <section id="menu-links-uteis">
+            <nav class="wrapper-links-uteis">
+                <ul class="lista-links-uteis">
+                    <li id="id0">
+                        <a class="link" href="#">Acessibilidade</a>
+                        <a class="iconeAcessibilidade iconeContraste" href="#"><img class="acessibilidade" src="./icons/escurece-tela.png" alt="icone-escurece-menu"></a>
+                        <a class="iconeAcessibilidade" href="#">A+</a>
+                        <a class="iconeAcessibilidade" href="#">A-</a>
                     </li>
-                    <li>
-                        <a class="curso-gratis" href="#"> Cursos Grátis</a>
+                    <li id="idDestaque" class="destaque-cta">
+                        <a class="link" href="#"> Cursos Grátis</a>
                     </li>
-                    <li>
-                        <a href="#">Sou Aluno</a>
+                    <li id="id1">
+                        <a class="link lista-linksuteis-link1" href="#">Sou Aluno</a>
                     </li>
-                    <li>
-                        <a href="#">Sou Ex-Aluno</a>
+                    <li id="id2">
+                        <a class="link lista-linksuteis-link2" href="#">Sou Ex-Aluno</a>
                     </li>
-                    <li>
+                    <li id="mais-dropdown" class="clickDropdown">
                         <a href="#">Outros</a>
-                        <img class="acessibilidade" src="./icons/+.png" alt="+">
+                        <img class="iconeAcessibilidade" src="./icons/+.png" alt="+">
                     </li>
                     <li>
-                        <form class="pesquisa" action="">
-                            <input class="campo-pesquisa" type="text" placeholder="O que você procura?">
+                        <form id="topoPesquisa" class="form-topo-busca" action="/search/" method="get" >
+                            <input name="s" class="inputPesquisa" type="text" placeholder="O que você procura?">
                         </form>
                     </li>
                 </ul>
             </nav>
-            <div class="menu-inferior">
-
-            </div>
         </section>
+        <div id="wrapper-menu">
+            <ul class="lista-menu-principal">
+                <li>
+                    <a href="#" class="item-lista-menus">Cursos e Programas</a>
+                </li>
+                <li>
+                    <a href="#" class="item-lista-menus">Estude na UP</a>
+                </li>
+                <li>
+                    <a href="#" class="item-lista-menus">Benefícios</a>
+                </li>
+                <li>
+                    <a href="#" class="item-lista-menus">A Universidade Positivo</a>
+                </li>
+            </ul>
+        </div>
     </header>
+    </div>
 </body>
 </html>
