@@ -27,14 +27,13 @@ body{
 /* ---- Header */
 .header{
     display: block;
-}
-.header .act{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
 }
+
 /* ---__________________LINK MENUS_____________________________- */
 section{
     display: block;
@@ -102,11 +101,13 @@ ul.lista-links-uteis li a{
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
-    transition: all 0.2s ease-in-out 0s;
     padding: 0;
-
 }
-
+/* Estilo ao passar com o mouse encima do menu / menu superior */
+ul.lista-links-uteis li a:hover{
+    text-decoration: underline;
+}
+/* ------------------------- */
 ul.lista-links-uteis li a.iconeAcessibilidade{
     font-size: 15px;
     font-weight: 600;
@@ -123,7 +124,7 @@ img{
     outline: 0;
     font-size: 100%;
     width: 18px;
-    margin-left: 10px;
+    
 }
 .iconeContraste img{
     width: 15px;
@@ -173,7 +174,7 @@ form#topoPesquisa input[name="s"]{
     background: none;
     padding:  6px 30px 6px 10px;
 }
-/* ----______________________________________________ */
+/* ----__________________Menu Cursos e programas/estude na UP/ Beneficios/ a Universidade____________________________ */
 div{
     padding: 0;
     border: 0;
@@ -193,4 +194,109 @@ div#wrapper-menu{
     padding-top: 15px;
     padding-bottom: 30px;
     margin-top: 0;
+}
+div#wrapper-menu .logo a img{
+    width: 200px;
+    height: 60px;
+    margin-right: 10px;
+}
+.lista-de-menu{
+    width: 100%;
+}
+.itens-menu-principal{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.itens-menu-principal li{
+    margin-left: 8px;
+}
+
+/* estilo e configuração do botão */
+.itens-menu-principal li a{
+    display: flex;
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background: #003b77;
+    border: 1px solid #003b77;
+    padding: 6px 14px;
+}
+span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0;
+}
+
+/* Estilo ao passar com o mouse encima do menu / menu inferior*/
+.itens-menu-principal li .bot-cursos:hover{
+    background: white;
+    color: black;
+    border: 1px solid #ffffff00;
+}
+/* --------_________________________________----------------- */
+
+/* Sub menus ocultos */
+div.sub-menu-oculto{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1004px;
+    min-width: 1004px;
+    max-width: 1004px;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 15px 45px 10px 45px;
+    z-index: 1;
+}
+
+.itens-menu-principal li:hover > .sub-menu-oculto{
+    display: block;
+}
+
+/* Fim Sub menus ocultos */
+
+/* --- icone que amplia menu */
+.itens-menu-principal li a img{
+    width: 17px;
+    margin-left: 8px;
+}
+div.sub-menu{
+    column-width: auto;
+    column-count: 3;
+}
+.sub-menu ul{
+    
+    max-width: 155px;
+    break-inside: avoid-column;
+    padding-right: 0;
+    padding-bottom: 30px;
+}
+.sub-menu ul li{
+    margin-left: 0;
+    
+}
+/* ------------ CONFIGURAÇÃO BANER FUNDO DA TELA ------- */
+div.banner-fundo-tela{
+    height: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+div.banner img{
+    width: 100%;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
